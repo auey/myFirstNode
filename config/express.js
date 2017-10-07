@@ -41,6 +41,7 @@ module.exports = function () {
 
     require('../app/routes/index.route')(app); //import ตัวจัดการrouting ต้องอยู่หลัง app.use ทั้งหมด
     require('../app/routes/user.route')(app);
+    require('../app/routes/post.route')(app);
 
     return app;
 }
